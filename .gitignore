@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+fastenv/
+.env/
+.envrc
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test and coverage
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Misc
+*.sqlite3
+*.db
+
+# Uvicorn/Starlette
+*.pid
+
+# FastAPI static files
+staticfiles/
+
+# Ignore local settings
+local_settings.py
