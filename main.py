@@ -2,22 +2,31 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+
 @app.get('/sample')
-def index():
-    return 'Hey hi'
+def sample():
+    return 99
 
-@app.get('/') #returing a json api 
-def json():
-    return {"data": {"name": "Nitheesh"}}
+@app.get('/samplestring')
+def samplestring():
+    return "Sample string returing"
 
-
-@app.get('/about')
-def about():
+@app.get('/jsondata')
+def json_data():
     return {
-        "data":{
-            "name":"S.Nitheesh",
-            "age":19,
-            "Gender":"Male",
-            "Profession":"Student"
-        }
+        "Name":"Nitheesh",
+        "Age": 19,
+        "Gender":"Male",
+        "Profession":"Student"
     }
+
+
+@app.get('/')
+def index():
+    return {
+        "Type this below URL to go there pages":"Values",
+        "URL_sample":"/sample",
+        "URL_samplestring":"/samplestring",
+        "URL_jsondata":"/jsondata"
+    }
+
