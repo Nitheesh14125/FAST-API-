@@ -27,6 +27,14 @@ def index():
         "Type this below URL to go there pages":"Values",
         "URL_sample":"/sample",
         "URL_samplestring":"/samplestring",
-        "URL_jsondata":"/jsondata"
+        "URL_jsondata":"/jsondata",
+        "URL_Pass_Parameter":r"/items/{there_id}"
+    }
+
+#pass parameters
+@app.get("/items/{item_id}")
+def item_value(item_id):
+    return {
+        "Item id":item_id
     }
 
